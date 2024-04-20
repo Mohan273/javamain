@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .h {
+            text-align: center;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            background-color: #fff;
+            height: 100%;
+
+        }
+
+        div {
+            background-color: #1b1b71;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+
+        }
+
+        @media(max-width:768px) {
+            section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:576px) {
+            section {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="h">Java</h1>
+    <section>
+        <div onclick="day1()">
+            <h1>WEEK 1</h1>
+        </div>
+        <div onclick="day2()">
+            <h1>WEEK 2</h1>
+        </div>
+        <div onclick="day3()">
+            <h1>WEEK 3</h1>
+        </div>
+        <div onclick="day4()">
+            <h1>WEEK 4</h1>
+        </div>
+        <div onclick="day5()">
+            <h1>WEEK 5</h1>
+        </div>
+        <div onclick="day6()">
+            <h1>WEEK 6</h1>
+        </div>
+
+    </section>
+    <script>
+        function day1() {
+            window.location.href = "weakonejava.html"
+        }
+
+        function day2() {
+            window.location.href = "weektwojava.html"
+        }
+
+        function day3() {
+            window.location.href = "weekthreejava.html"
+        }
+
+        function day4() {
+            window.location.href = "weekfourjava.html"
+        }
+
+        function day5() {
+            window.location.href = "weekfivejava.html"
+        }
+    </script>
+</body>
+
+</html>
